@@ -1,13 +1,20 @@
-# Taller Streamlit for Dummies
+# Taller Streamlit
 
-Este repositorio contiene el texto de un taller de Streamlit para dummies.
-* Usa github pages para el contenido.
-* Es una app de streamlit que te permite aprender a programar en streamlit.
+![4 dummies](/images/4dummies.png)
 
-Link: https://sebastiandres.github.io/streamlit4dummies/
+Este repositorio contiene el texto del taller **"Construye una webapp multipágina con streamlit - for dummies"**
 
-## Instrucciones
+El repositorio tiene 2 finalidades:
+* Es el template de una app de streamlit que te permite aprender a programar en streamlit, y que será completada por los asistentes al taller. 
+* Describe paso a paso el taller usando github pages para facilitar la lectura por los asistentes durante o fuera del taller.
 
-## Instalación
+## El taller
 
-## Ejecución
+El taller disponible como página web se encuentra en este [link](https://sebastiandres.github.io/streamlit4dummies/).
+
+## WebApp
+
+
+## Eventos
+* PyDay Chile 2022: 
+    * Fecha: 15 Julio 2022.
