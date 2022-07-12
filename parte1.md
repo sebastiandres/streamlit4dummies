@@ -23,11 +23,31 @@ En Noviembre del 2021 hice una charla sobre streamlit en la PyCon Chile donde pr
 
 ### Puro bla bla bla... muéstranos algunos ejemplos!
 Algunas de mis apps, por orden cronológico:
+Míos:
+https://stbook-template.streamlitapp.com/
+https://sebastiandres-streamlit-happy-birds-happy-birds-qzi7ap.streamlitapp.com/ 
+https://sebastiandres-ml-edu-confusion-matrix-streamlit-app-3q5126.streamlitapp.com/
+https://sebastiandres-streamlit-xkcd-streamlit-app-0f8sh1.streamlitapp.com/ 
+https://datasaurus.streamlitapp.com/
 * xkcd plots: mi primera app en streamlit, explorando los widgets y cómo graficar.
 * sdad
 * The confusion matrix
 * happy birds
 * Multipage template app
+Ejemplos
+https://share.streamlit.io/spiruel/satschool/main/app.py  
+https://streamlit.io/gallery
+https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py
+https://share.streamlit.io/streamlit/roadmap/
+https://github.com/jrieke/best-of-streamlit 
+https://share.streamlit.io/streamlit/demo-deepdream
+https://streamlit.io/components
+https://geospatial.streamlitapp.com/
+https://share.streamlit.io/streamlit/demo-deepdream
+
+ 
+
+
 
 ## Sobre Streamlit
 
@@ -136,17 +156,101 @@ streamlit run streamlit_app.py
 (1) Crear y editar un archivo streamlit_app.py con algún contenido:
 
 ## Elementos de Streamlit
-Todo está en la API
+La [documentación de la API](https://docs.streamlit.io/library/api-reference) de streamlit es magnífica. Revísala frencuentamente, porque la librería mejora semana a semana.
 
 ### Configuración (setup)
-- set_page_config
-- themes
-- Multipages
+El primer paso (o el último paso, según prefieras) es realizar algunas configuraciones de la aplicación. Estas son opcionales, pero permiten hacer que la aplicación se vea mejor.
+
+La función `set_page_config` ([doc](https://docs.streamlit.io/library/api-reference/utilities/st.set_page_config)) permite configurar el favicon y título de la página en el navegador, y también si el texto debe ocupar todo el ancho posible (`wide`) o centrado (`centered`). Debe ser el primer comando que se ejecuta en la aplicación, después de importar la(s) librería(s).
+
+```
+st.set_page_config(
+     page_title="Ex-stream-ly Cool App",
+     page_icon="❤️",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'Get Help': 'https://www.extremelycoolapp.com/help',
+         'Report a bug': "https://www.extremelycoolapp.com/bug",
+         'About': "# This is a header. This is an *extremely* cool app!"
+     }
+ )
+```
+
+La funcionalidad de multipágina es muy reciente en Streamlit ([api](https://docs.streamlit.io/library/get-started/multipage-apps)). Su funcionamiento es sencillo: todas las páginas adicionales a mostrar deben existir en una carpeta llamada `pages`. Los archivos se mostrarán de manera alfabética, y el nombre de la página será el nombre del archivo (omitiendo si existe inicialmente un número o un emoji)
+
+```
+Home.py # Archivo principal a ejecutar mediante "streamlit run Home.py"
+└─── pages/
+  └─── 1_Intro.py # Primera página
+  └─── 2_Página_dos.py # Segunda página
+  └─── 99_😎_Ultima_página.py # Tercera página, y tiene como ícono un emoji 😎
+```
 
 ### ¿Cómo colocar elementos?
-- layouts
-- placeholders
-- sidebar
+Existen varios formas de ordenar el contenido de una aplicación: 
+
+* Columnas ([st.columns]()): Permite crear columnas de ancho fijo, agregado elementos a cada uno de ellas.
+
+```
+col1, col2 = st.columns(2) # Anchos iguales
+#col1, col2 = st.columns([2, 1]) # Anchos proporcionales
+with col1:
+    st.write("A cat")
+    st.button("A button")
+col2.button("Another button")
+col2.write("A dog")
+```
+
+* Expander ([st.expander]()): Permite crear un elemento acordeón que se despliega o se contrae.
+
+```
+with st.expander("Título del expander"):
+    # Este contenido se muestra solo cuando se expande el elemento
+    st.write("Hola mundo")
+```
+
+* Tabs ([st.tabs]()): Permite crear un menú de pestañas.
+
+```
+with st.tabs("Título de la pestaña 1"):
+    # Este contenido se muestra en la pestaña 1
+    st.write("Hola mundo")
+
+with st.tabs("Título de la pestaña 2"):
+    # Este contenido se muestra en la pestaña 2
+    st.write("¿Que tal, festival?")
+```
+
+* Sidebar ([st.sidebar]()): Permite agregar elementos a la barra lateral de la aplicación. Esta barra lateral se muestra sólo si tiene elementos en ella (páginas o elementos agregados).
+
+```
+# En lugar de llamar a st directamente
+# Llamamos a st.sidebar
+st.sidebar.write('Esto está en el sidebar')
+if st.sidebar.button('Mi botón opcional'):
+    st.balloons()
+```
+
+
+
+Existe un trucazo muy interesante. Si necesitas calcular varias cosas y mostrar un elemento después, puedes generar un placeholder utilizando la función `st.empty`.
+Con ello, streamlit sabe que tiene que reservar un lugar para un elemento que le será alimentado después (y que puede ser cualquier elemento válido y compatible). También puedes usar `st.empty` para hacer desaparecer un elemento creado de esta forma.
+
+Prueba copiando, pegando y ejecutando este código en el archivo `pages/99_🗑️_sandbox.py`
+```
+import time
+if st.button("Click me!"):
+    st.write("Uno")
+    e2 = st.empty()
+    e3 = st.empty()
+    e3.write("Tres")
+    time.sleep(2)
+    e2.write("Dos")
+    time.sleep(2)
+    e3.empty()
+    e2.empty()
+```
 
 ### ¿Qué elementos colocar?
 - inputs
@@ -178,38 +282,4 @@ La opción gratis permite tener hasta 3 apps en línea.
 
 ## Consejos
 - Revisar la api constantemente. Siempre agregan nuevas funcionalidades.
-- Seguir en redes sociales a @streamlit y personas de interés: 
-
----
-Contenido acá
-
-
-Parte 1: 55 minutos. Temas: instalación de librerías, ejecutando en local, deployment a la nube (opciones), widgets y lógica de streamlit, consideraciones para multipaging.
-Presentación.
-About me: Formación, CDO / Streamlit creator.
-Streamlit:
-Ejemplos
-https://streamlit.io/gallery
-https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py
-https://share.streamlit.io/streamlit/roadmap/
-https://github.com/jrieke/best-of-streamlit 
-https://share.streamlit.io/streamlit/demo-deepdream
-https://streamlit.io/components
-https://geospatial.streamlitapp.com/
-https://share.streamlit.io/spiruel/satschool/main/app.py  
- 
-Míos:
-https://stbook-template.streamlitapp.com/
-https://sebastiandres-streamlit-happy-birds-happy-birds-qzi7ap.streamlitapp.com/ 
-https://sebastiandres-ml-edu-confusion-matrix-streamlit-app-3q5126.streamlitapp.com/
-https://sebastiandres-streamlit-xkcd-streamlit-app-0f8sh1.streamlitapp.com/ 
-https://datasaurus.streamlitapp.com/
-https://share.streamlit.io/spiruel/satschool/main/app.py  
-
-Como partir
-Extensiones
-Multipaging
-Ayuda
-Instalación
-Ejecución en local
-Deployment a la nube: opciones
+- Seguir en redes sociales a @streamlit y personas de interés.
