@@ -100,6 +100,10 @@ pip install -r requirements.txt
 
 ### Versionamiento: cuidado con la version!
 
+## Ejecutando en local
+- Ejemplos. Virtualenvs.
+- Actividad 1.2: Ejecutar en local
+
 ### Actividad práctica 1.1
 Para las actividades del taller resulta ideal contar con una cuenta gratuita en github. Si no tienes una, puedes crearla en github.com. Si no tienes cuenta y no deseas crear una, puedes ejecutar en local las actividades y unicamente no podrás hacer deployment a la nube.
 
@@ -130,10 +134,6 @@ streamlit run streamlit_app.py
 
 ¿Cómo se usa?
 (1) Crear y editar un archivo streamlit_app.py con algún contenido:
-
-## Ejecutando en local
-- Ejemplos. Virtualenvs.
-- Actividad 1.2: Ejecutar en local
 
 ## Elementos de Streamlit
 Todo está en la API
