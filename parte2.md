@@ -1,6 +1,25 @@
-Parte 2
-=========
+# Parte 2 - Practical Kindom
 
+## Session State
+
+## Secrets
+
+## Optimization
+
+## Página 1: 
+Actividad 2.1: Completar la página 1 
+
+## Página 2: 
+Actividad 2.1: Completar la página 1 
+
+## Consejos adicionales
+- Learn Just in Time vs Learn Just in Case: Tirarse a la piscina
+- Discord, Foro
+- Libros
+- RRSS
+- 30 días de Streamlit
+
+---
 Página 1: ./Home
 Página 2: pages/00_logo_analisis_datos.py
 Página 3: pages/00_logo_analisis_datos.py

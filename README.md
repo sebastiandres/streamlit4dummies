@@ -1,21 +1,13 @@
-# Streamlit Template
+# Taller Streamlit for Dummies
 
-This is a template for Streamlit projects.
+Este repositorio contiene el texto de un taller de Streamlit para dummies.
+* Usa github pages para el contenido.
+* Es una app de streamlit que te permite aprender a programar en streamlit.
 
-# Customize
+Link: https://sebastiandres.github.io/streamlit4dummies/
 
-Edit `/streamlit_app.py` and `/pages/*.py`to customize this app.
+## Instrucciones
 
-# Online demo
+## Instalación
 
-To see an online demo, use this link:
-
-[https://sebastiandres.github.io/NAME_OF_APP](https://sebastiandres.github.io/NAME_OF_APP)
-
-## Local run
-
-To locally run the app, 
-
-```
-streamlit run streamlit_app.py
-```
+## Ejecución

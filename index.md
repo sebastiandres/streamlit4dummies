@@ -9,37 +9,22 @@ Construye una webapp multipágina con streamlit - for dummies
 
 
 ## Parte 1
-* Temas: 
-  * Instalación de librerías
-  * Ejecutando en local
-  * Deployment a la nube (opciones)
-  * Widgets y lógica de streamlit
-  * Consideraciones para multipaging.
+* Aspectos básicos de streamlit. Nuestra primera app.
+* Duración estimada: 60 minutos.
 * [Link](https://sebastiandres.github.io/streamlit4dummies/parte1)
-* Duración estimada: 60 minutos.
 
 ## Pausa
 10 minutos
 
 ## Parte 2
-* Temas: Desarrollaremos una webapp multipágina con 3 páginas guiadas y una página con contenido a elección.
-    * Home con una descripción del proyecto
-    * Página de análisis de datos obtenidos por carga directa de archivo
-    * Página de análisis de datos obtenidos por API. 
-    * Creación de una página con alguna idea personal. 
-    * Como seguir...
+* Funcionalidades avanzadas y personalizar 2 páginas.
+* Duración estimada: 60 minutos.
 * [Link](https://sebastiandres.github.io/streamlit4dummies/parte2)
-* Duración estimada: 60 minutos.
 
 ## Pausa
 10 minutos
 
-## Parte 2
-* Temas: Desarrollaremos una webapp multipágina con 3 páginas guiadas y una página con contenido a elección.
-    * Home con una descripción del proyecto
-    * Página de análisis de datos obtenidos por carga directa de archivo
-    * Página de análisis de datos obtenidos por API. 
-    * Creación de una página con alguna idea personal. 
-    * Como seguir...
-* [Link](https://sebastiandres.github.io/streamlit4dummies/parte3)
+## Parte 3
+* Más funcionalidades y una actividad libre.
 * Duración estimada: 30 minutos.
+* [Link](https://sebastiandres.github.io/streamlit4dummies/parte3)

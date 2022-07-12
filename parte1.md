@@ -11,30 +11,49 @@
 - Filosofía
 
 ## Instalación
+- ¿Cómo instalar streamlit?
+- requirements.txt
+- Versionamiento: cuidado con la version!
+- Actividad 1.1: Fork + Descargar + Instalar
 
 ## Ejecutando en local
+- Ejemplos. Virtualenvs.
+- Actividad 1.2: Ejecutar en local
 
 ## Elementos de Streamlit
 Todo está en la API
 
 ### Configuración (setup)
+- set_page_config
+- themes
+- Multipages
 
 ### ¿Cómo colocar elementos?
+- layouts
+- placeholders
+- sidebar
 
 ### ¿Qué elementos colocar?
+- inputs
+- control flow, messages
+- text, media, charts
 
-#### Inputs
-
-#### Status y control flow
-
-#### Outputs
+- Actividad 1.3: Personalizar la página principal
 
 ## Deployment a la nube
+- Streamlit cloud
+- Otras opciones: heroku, azure, aws, etc.
+- Actividad 1.4: Subir cambios a github y subir a la nube
 
 ## Componentes
+- Donde buscar. 
+- Ejemplos: ¿camara yuihiro?
 
 ## Consejos
+- Revisar la api constantemente. Siempre agregan nuevas funcionalidades.
+- Seguir en redes sociales a @streamlit y personas de interés: 
 
+---
 Contenido acá
 
 
