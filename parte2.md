@@ -20,6 +20,25 @@ Actividad 2.1: Completar la página 1
 - RRSS
 - 30 días de Streamlit
 
+## Más referencias
+Oficial:
+* https://streamlit.io/
+* https://docs.streamlit.io/
+
+Comunidades:
+* Foro Oficial: https://discuss.streamlit.io/
+* Discord: https://discord.com/invite/bTz5EDYh9Z
+
+Material:
+* 📖 Getting Started with Streamlit for Data Science, de Tyler Richards
+
+Twitter:
+* Streamlit: @streamlit
+* Fanilo Andrianasolo @andfanilo
+* Charlie Wargnier: @DataChaz
+* JM Napoles: @napoles3D
+
+
 ---
 Página 1: ./Home
 Página 2: pages/00_logo_analisis_datos.py

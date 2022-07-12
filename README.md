@@ -10,7 +10,7 @@ El repositorio tiene 2 finalidades:
 
 ## El taller
 
-El taller disponible como página web autocontenida se encuentra en este [link](https://sebastiandres.github.io/streamlit4dummies/).
+El taller disponible como página web autocontenida se encuentra en este link: https://sebastiandres.github.io/streamlit4dummies/.
 
 ## WebApp
 
