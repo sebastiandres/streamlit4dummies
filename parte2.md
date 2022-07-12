@@ -1,4 +1,5 @@
 # Parte 2 - Practical Kindom
+*Nuestro héroe perfecciona sus habilidades y triunfa* 
 
 ## Session State
 
