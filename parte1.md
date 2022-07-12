@@ -1,5 +1,39 @@
-Parte 1
-=========
+# Parte 1 - Streamlit World
+
+## Sobre mi
+- Quien soy
+- Como llegué a streamlit
+
+## Sobre Streamlit
+- Historia
+- Hoy
+- Ejemplos
+- Filosofía
+
+## Instalación
+
+## Ejecutando en local
+
+## Elementos de Streamlit
+Todo está en la API
+
+### Configuración (setup)
+
+### ¿Cómo colocar elementos?
+
+### ¿Qué elementos colocar?
+
+#### Inputs
+
+#### Status y control flow
+
+#### Outputs
+
+## Deployment a la nube
+
+## Componentes
+
+## Consejos
 
 Contenido acá
 
@@ -25,6 +59,7 @@ https://sebastiandres-ml-edu-confusion-matrix-streamlit-app-3q5126.streamlitapp.
 https://sebastiandres-streamlit-xkcd-streamlit-app-0f8sh1.streamlitapp.com/ 
 https://datasaurus.streamlitapp.com/
 https://share.streamlit.io/spiruel/satschool/main/app.py  
+
 Como partir
 Extensiones
 Multipaging
