@@ -5,9 +5,7 @@
 
 ### ¿Quién soy?
 
-Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de Data Scientists y Data Engineers (¿Interesado? ¡contáctame!). Llevo programando en Python desde el 2008, y siempre estoy buscando nuevas librerías. He dictado charlas y talleres en diversas PyCon (Colombia, Argentina, Chile, Latam) y desarrollado algunas librerías open source (pypsdier y streamlit_book). 
-
-¿Más sobre mí? [Github](https://github.com/sebastiandres), [Twitter](https://twitter.com/sebastiandres) & [Linkedin](https://www.linkedin.com/in/sebastiandres/).
+Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de Data Scientists y Data Engineers (¿Interesado? ¡contáctame!). Llevo programando en Python desde el 2008, y siempre estoy buscando nuevas librerías. He dictado charlas y talleres en diversas PyCon (Colombia, Argentina, Chile, Latam) y desarrollado algunas librerías open source (pypsdier y streamlit_book). ¿Más sobre mí? [Github](https://github.com/sebastiandres), [Twitter](https://twitter.com/sebastiandres) & [Linkedin](https://www.linkedin.com/in/sebastiandres/).
 
 ### ¿Qué relación tengo con streamlit?
 
@@ -232,37 +230,38 @@ if st.button("Click me!"):
 
 ### ¿Qué elementos colocar?
 La cantidad de elementos en Streamlit es enorme. No cubriremos todos. Para ver todos los elementos disponibles, visita la [documentación de la API](https://docs.streamlit.io/library/api-reference). A diferencia de Streamlit, prefiero clasificar los elementos en cuatro categorías: 
-- Entrada de datos: Nos permiten pedir datos al usuario.
-- Control: Nos permiten alertar o informar al usuario.
-- Output y multimedia: nos permiten mostrar algo al usuario.
-- Celebración: `st.balloons()` y `st.snowflake()`
+- Entrada de datos: para pedir datos al usuario.
+- Control: para alertar o informar al usuario.
+- Output y multimedia: para mostrar algo al usuario.
+- Celebración: para indicar al usuario de un evento memorable.
 
-La mejor manera es buscar en la documentación de la API, e ir probando los elementos que se necesitan.
+La mejor manera es buscar en la documentación de la API, e ir probando los elementos que se necesitan. En [https://st4dummies.streamlitapp.com/StreamlitElements](https://st4dummies.streamlitapp.com/StreamlitElements) existe una demostración interactiva de casi todos los elementos (que puede compararse con el archivo `pages/StreamlitElements.py`).
 
 ## Actividad Práctica: Personaliza la página de Inicio
 Utiliza los elementos que más te hayan llamado la atención para personalizar la página principal con alguna actividad.
 
 Algunas ideas:
+* Agrega tu nombre y una foto de perfil.
 * Obtén el nombre del usuario y una fecha, y calcula cuantos días faltan para su cumpleaños.
-* Haz un gráfico interesante!
+* ¡Haz un gráfico interesante!
 
 ## Deployment a la nube
-- Streamlit cloud
+Para compartir tu aplicación, necesitas alojarla en la nube para que otras personas puedan accederla y no exista sólo en tu computador. Existen varias alternativas: Streamlit Share, heroku, hugging face, y varias otras. En todos los casos, el prerrequisito es tener el código almacenado en un repositorio en línea (preferentemente github debido a las integraciones disponibles).
 
-¿Como se comparte online?
-Prerrequisito: Almacenar en un repositorio con git.
-Streamlit Cloud
-Múltiples opciones: gratis y de pago
+El video lo explica bien como hacerlo una vez que tienes una cuenta en https://share.streamlit.io/
 
-Permite vincular a repositorio de github y hacer deploy en 1 click
+[![Streamlit Share](./images/video_preview.png)](https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/streamlit_sharing_silent.mp4 "Streamlit Share")
 
-¡La página web se actualiza automática al cambiar el código en el repositorio!
+## Actividad Práctica: Deploy a la nube
 
-La opción gratis permite tener hasta 3 apps en línea.
+[+] Subir cambios a tu repositorio
+```
+git commit -am "Mis cambios se van a la nube"
+```
 
-- Otras opciones: hugging face, heroku, azure, aws, etc.
-- Actividad 1.4: Subir cambios a github y subir a la nube
+[+] Hacer deployment a Streamlit Share
 
 ## Consejos Finales
-- Revisar la api constantemente. Siempre agregan nuevas funcionalidades.
-- Seguir en redes sociales a @streamlit y personas de interés.
+
+- Revisar la documentación de la api constantemente. Siempre agregan nuevas funcionalidades.
+- Seguir en redes sociales a @streamlit y personas de interés para consejos e ideas.
