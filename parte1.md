@@ -1,11 +1,14 @@
 # Parte 1 - Streamlit World
 *Nuestro héroe abandona su mundo conocido y debe desarrollar nuevas habilidades* 
 
-## 1. Sobre mi
+## 1. Sobre mí
 
 ### ¿Quién soy?
 
 Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de Data Scientists y Data Engineers (¿Interesado? ¡contáctame!). Llevo programando en Python desde el 2008, y siempre estoy buscando nuevas librerías. He dictado charlas y talleres en diversas PyCon (Colombia, Argentina, Chile, Latam) y desarrollado algunas librerías open source (pypsdier y streamlit_book). ¿Más sobre mí? [Github](https://github.com/sebastiandres), [Twitter](https://twitter.com/sebastiandres) & [Linkedin](https://www.linkedin.com/in/sebastiandres/).
+
+![avatar](./images/avatar.jpeg)
+
 
 ### ¿Qué relación tengo con streamlit?
 
@@ -17,10 +20,13 @@ En Noviembre del 2021 hice una charla sobre streamlit en la PyCon Chile donde pr
 Algunas de mis apps, por orden cronológico:
 
 * [xkcd plots](https://sebastiandres-streamlit-xkcd-streamlit-app-0f8sh1.streamlitapp.com/): ¡mi primera app en streamlit! Explorando los widgets y cómo graficar. 
-* [Happy Birds](https://sebastiandres-streamlit-happy-birds-happy-birds-qzi7ap.streamlitapp.com/): Una app que desarrollé para un artículo en el blog de streamlit, para ilustrar el uso de la librería streamlit_book.
+* [Happy Birds](https://sebastiandres-streamlit-happy-birds-happy-birds-qzi7ap.streamlitapp.com/): Una app que desarrollé para un artículo en el [blog de streamlit](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/), para ilustrar el uso de la librería streamlit_book.
 * [El datasaurio](https://datasaurus.streamlitapp.com/): Una app para ilustrar cómo streamlit permite complementar un artículo, y la importancia de graficar los datos.
 * [Confusion Matrix](https://sebastiandres-ml-edu-confusion-matrix-streamlit-app-3q5126.streamlitapp.com/): Explorando los límites de streamlit en html y javascript, enseñando sobre la matriz de confusión, y jugando con la última pelicula de matrix.
 * [Multipage Template](https://stbook-template.streamlitapp.com/): Un template para hacer una app multipágina con autenticación.
+
+![happy birds](https://blog.streamlit.io/content/images/size/w2000/2022/01/HappyBirds--1920-.gif)
+
 
 ## 2. Sobre Streamlit
 
@@ -46,6 +52,8 @@ Usa Streamlit si quieres:
 
 ### Historia
 Streamlit fue fundada en 2018 por Adrien Treuille, Amanda Kelly, y Thiago Teixeira. A pesar de ser una librería de código abierto, su desarrollo esta a cargo de la startup del mismo nombre y tiene detrás un equipo de +60 personas. En marzo del 2022, streamlit fue adquirida por Snowflake. La librería seguirá siendo una librería de código abierto, pero se espera tenga una integración potente con Snowflake. Tiene un desarrollo vertiginoso, con nuevas versiones y funcionalidades saliendo cada semana.
+
+![streamlit star history](./images/star_history.png)
 
 ### Filosofía
 >> "Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes you can build and deploy powerful data apps."
@@ -101,12 +109,18 @@ pip install -r requirements.txt
 
 Nota: No olvides incluir la versión de las librerías. Es un trabajo extra, pero garantiza que la ejecución sea reproducible y estable en el tiempo. No hay nada más molesto que pensar que una app está funcionando, para descubrir después que ya no está funcionando porque la última versión de una librería X hizo un cambio que te afectó sin saberlo.
 
-## 4 Actividad práctica
+## 4. Actividad práctica
+
 Para las actividades del taller resulta ideal contar con una cuenta gratuita en github. Si no tienes una, puedes crearla en github.com. Si no tienes cuenta y no deseas crear una, puedes ejecutar en local las actividades y unicamente no podrás hacer deployment a la nube.
+
+¡Estamos listos para crear nuestra primera app!
+
+![homer grill](./images/homer_grill.gif)
+
 
 Realiza las siguientes tareas:
 
-[+] Realiza un fork del repositorio
+[+] Realiza un fork del repositorio en [github](https://github.com/sebastiandres/streamlit4dummies).
 
 [+] Descarga el repositorio a local: 
 ```
@@ -131,7 +145,7 @@ streamlit run Inicio.py
 
 Edita el archivo `Inicio.py` y cómo se refleja casi inmediatamente en la aplicación.
 
-## 6. Elementos de Streamlit
+## 5. Elementos de Streamlit
 La [documentación de la API](https://docs.streamlit.io/library/api-reference) de streamlit es magnífica. Revísala frencuentamente, porque la librería mejora semana a semana.
 
 ### Configuración (setup)
@@ -141,7 +155,7 @@ La función `set_page_config` ([doc](https://docs.streamlit.io/library/api-refer
 
 ```python
 st.set_page_config(
-     page_title="Ex-stream-ly Cool App",
+     page_title="Mi título de app perfecto",
      page_icon="❤️",
      layout="wide",
      initial_sidebar_state="expanded",
@@ -213,7 +227,7 @@ if st.sidebar.button('Mi botón opcional'):
 Existe un trucazo muy interesante. Si necesitas calcular varias cosas y mostrar un elemento después, puedes generar un placeholder utilizando la función `st.empty`.
 Con ello, streamlit sabe que tiene que reservar un lugar para un elemento que le será alimentado después (y que puede ser cualquier elemento válido y compatible). También puedes usar `st.empty` para hacer desaparecer un elemento creado de esta forma.
 
-Prueba copiando, pegando y ejecutando este código en el archivo `pages/99_🗑️_sandbox.py`
+Prueba copiando, pegando y ejecutando este código en el archivo `Inicio.py`
 ```
 import time
 if st.button("Click me!"):
@@ -237,7 +251,7 @@ La cantidad de elementos en Streamlit es enorme. No cubriremos todos. Para ver t
 
 La mejor manera es buscar en la documentación de la API, e ir probando los elementos que se necesitan. En [https://st4dummies.streamlitapp.com/StreamlitElements](https://st4dummies.streamlitapp.com/StreamlitElements) existe una demostración interactiva de casi todos los elementos (que puede compararse con el archivo `pages/StreamlitElements.py`).
 
-## Actividad Práctica: Personaliza la página de Inicio
+## 6. Actividad Práctica: Personaliza la página de Inicio
 Utiliza los elementos que más te hayan llamado la atención para personalizar la página principal con alguna actividad.
 
 Algunas ideas:
@@ -245,14 +259,14 @@ Algunas ideas:
 * Obtén el nombre del usuario y una fecha, y calcula cuantos días faltan para su cumpleaños.
 * ¡Haz un gráfico interesante!
 
-## Deployment a la nube
+## 7. Deployment a la nube
 Para compartir tu aplicación, necesitas alojarla en la nube para que otras personas puedan accederla y no exista sólo en tu computador. Existen varias alternativas: Streamlit Share, heroku, hugging face, y varias otras. En todos los casos, el prerrequisito es tener el código almacenado en un repositorio en línea (preferentemente github debido a las integraciones disponibles).
 
 El video lo explica bien como hacerlo una vez que tienes una cuenta en https://share.streamlit.io/
 
 [![Streamlit Share](./images/video_preview.png)](https://s3-us-west-2.amazonaws.com/assets.streamlit.io/videos/streamlit_sharing_silent.mp4 "Streamlit Share")
 
-## Actividad Práctica: Deploy a la nube
+## 8. Actividad Práctica: Deploy a la nube
 
 [+] Subir cambios a tu repositorio
 ```
@@ -261,7 +275,7 @@ git commit -am "Mis cambios se van a la nube"
 
 [+] Hacer deployment a Streamlit Share
 
-## Consejos Finales
+## 9. Consejos Finales
 
 - Revisar la documentación de la api constantemente. Siempre agregan nuevas funcionalidades.
 - Seguir en redes sociales a @streamlit y personas de interés para consejos e ideas.

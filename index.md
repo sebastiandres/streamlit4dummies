@@ -1,5 +1,6 @@
-Construye una webapp multipágina con streamlit - for dummies
-===============================================================
+# Construye una webapp multipágina con streamlit - for dummies
+
+![4 dummies](/images/4dummies.png)
 
 ## Consideraciones
 * El taller durará aproximadamente 3 horas, con pausas de descanso.
@@ -9,22 +10,11 @@ Construye una webapp multipágina con streamlit - for dummies
 
 
 ## Parte 1
-* Aspectos básicos de streamlit. Nuestra primera app.
-* Duración estimada: 60 minutos.
-* [Link](https://sebastiandres.github.io/streamlit4dummies/parte1)
-
-## Pausa
-10 minutos
+[Aspectos básicos de streamlit. Nuestra primera app](https://sebastiandres.github.io/streamlit4dummies/parte1). Duración estimada: 60 minutos. 
 
 ## Parte 2
-* Funcionalidades avanzadas y personalizar 2 páginas.
-* Duración estimada: 60 minutos.
-* [Link](https://sebastiandres.github.io/streamlit4dummies/parte2)
-
-## Pausa
-10 minutos
+[Funcionalidades avanzadas y personalizar 2 páginas](https://sebastiandres.github.io/streamlit4dummies/parte2). Duración estimada: 60 minutos.
 
 ## Parte 3
-* Más funcionalidades y una actividad libre.
-* Duración estimada: 30 minutos.
-* [Link](https://sebastiandres.github.io/streamlit4dummies/parte3)
+[Más funcionalidades y una actividad libre](https://sebastiandres.github.io/streamlit4dummies/parte3).
+ Duración estimada: 30 minutos.
