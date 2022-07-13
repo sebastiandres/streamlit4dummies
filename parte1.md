@@ -141,7 +141,7 @@ El primer paso (o el último paso, según prefieras) es realizar algunas configu
 
 La función `set_page_config` ([doc](https://docs.streamlit.io/library/api-reference/utilities/st.set_page_config)) permite configurar el favicon y título de la página en el navegador, y también si el texto debe ocupar todo el ancho posible (`wide`) o centrado (`centered`). Debe ser el primer comando que se ejecuta en la aplicación, después de importar la(s) librería(s).
 
-```
+```python
 st.set_page_config(
      page_title="Ex-stream-ly Cool App",
      page_icon="❤️",
@@ -157,7 +157,7 @@ st.set_page_config(
 
 La funcionalidad de multipágina es muy reciente en Streamlit ([api](https://docs.streamlit.io/library/get-started/multipage-apps)). Su funcionamiento es sencillo: todas las páginas adicionales a mostrar deben existir en una carpeta llamada `pages`. Los archivos se mostrarán de manera alfabética, y el nombre de la página será el nombre del archivo (omitiendo si existe inicialmente un número o un emoji)
 
-```
+```bash
 Inicio.py # Archivo principal a ejecutar mediante "streamlit run Inicio.py"
 └─── pages/
   └─── 1_Intro.py # Primera página
@@ -170,7 +170,7 @@ Existen varios formas de ordenar el contenido de una aplicación. Prueba editar 
 
 * Columnas ([st.columns]()): Permite crear columnas de ancho fijo, agregado elementos a cada uno de ellas.
 
-```
+```python
 col1, col2 = st.columns(2) # Anchos iguales
 #col1, col2 = st.columns([2, 1]) # Anchos proporcionales
 with col1:
@@ -231,11 +231,20 @@ if st.button("Click me!"):
 ```
 
 ### ¿Qué elementos colocar?
-- inputs
-- control flow, messages
-- text, media, charts
+La cantidad de elementos en Streamlit es enorme. No cubriremos todos. Para ver todos los elementos disponibles, visita la [documentación de la API](https://docs.streamlit.io/library/api-reference). A diferencia de Streamlit, prefiero clasificar los elementos en cuatro categorías: 
+- Entrada de datos: Nos permiten pedir datos al usuario.
+- Control: Nos permiten alertar o informar al usuario.
+- Output y multimedia: nos permiten mostrar algo al usuario.
+- Celebración: `st.balloons()` y `st.snowflake()`
 
-- Actividad 1.3: Personalizar la página principal
+La mejor manera es buscar en la documentación de la API, e ir probando los elementos que se necesitan.
+
+## Actividad Práctica: Personaliza la página de Inicio
+Utiliza los elementos que más te hayan llamado la atención para personalizar la página principal con alguna actividad.
+
+Algunas ideas:
+* Obtén el nombre del usuario y una fecha, y calcula cuantos días faltan para su cumpleaños.
+* Haz un gráfico interesante!
 
 ## Deployment a la nube
 - Streamlit cloud
@@ -254,10 +263,6 @@ La opción gratis permite tener hasta 3 apps en línea.
 - Otras opciones: hugging face, heroku, azure, aws, etc.
 - Actividad 1.4: Subir cambios a github y subir a la nube
 
-## Componentes
-- Donde buscar. 
-- Ejemplos: ¿camara yuihiro?
-
-## Consejos
+## Consejos Finales
 - Revisar la api constantemente. Siempre agregan nuevas funcionalidades.
 - Seguir en redes sociales a @streamlit y personas de interés.
