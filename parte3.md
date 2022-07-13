@@ -1,16 +1,11 @@
 # Parte 3 - Web Dominion
 *Nuestro héroe regresa a su mundo conocido con las nuevas habilidades adquiridas* 
 
-Más funcionalidades:
-
-## Query parameters
-- get_query_params
-- set_query_params
-
-## Ble ble
-
 ## Página Personal
-Actividad libre: ¿Que hacemos en la página 3?
+¿Qué te gustaría hacer en Streamlit?
+Edita la página ´pages/Proyecto_Personal.py´ para que te permita cumplirlo.
 
-## Solución
-La solución a las distintas actividades se encuentra en el repositorio streamlit4dummies_solutions
+Algunas ideas:
+* Utilizar Streamlit para consumir una librería de python (ejemplo: `pretty_maps`)
+* Tomar datos un archivo o BD y consumirlo, para generar alguna grafica interesante.
+* ...

@@ -1,47 +1,46 @@
 # Parte 2 - Practical Kindom
 *Nuestro héroe perfecciona sus habilidades y triunfa* 
 
-## Componentes
+## 1. Actividad Práctica: Analizando un archivo cargado por usuario
+
+Completar el archivo `pages/01_.py` para que permita XYZ. 
+
+## 2. Session State
+
+## 3. Secrets
+
+## 4. Query parameters
+- get_query_params
+- set_query_params
+
+## 5. Optimization
+st.cache
+
+## 6. Streamlit components
 - Donde buscar. 
 - Ejemplos: ¿camara yuihiro?
 
-## Session State
-
-## Secrets
-
-## Optimization
-
-## Página 1: 
+## 7. Actividad Práctica: Consumiendo un API
 Actividad 2.1: Completar la página 1 
 
-## Página 2: 
-Actividad 2.1: Completar la página 1 
+## 8. Seguir aprendiendo
 
-## Consejos adicionales
-- Learn Just in Time vs Learn Just in Case: Tirarse a la piscina
-- Discord, Foro
-- Libros
-- RRSS
-- 30 días de Streamlit
-
-## Más referencias
-Oficial:
-* https://streamlit.io/
-* https://docs.streamlit.io/
+Consejos:
+* No aprender sólo por saber. Buscar un proyecto apasionante, y aprender en lla medida que se necesita. ¡Hay que tirarse a la piscina!
+* Seguir el desafío: "[30 días de Streamlit](https://share.streamlit.io/streamlit/30days)"
 
 Comunidades:
 * Foro Oficial: https://discuss.streamlit.io/
 * Discord: https://discord.com/invite/bTz5EDYh9Z
 
-Material:
-* 📖 Getting Started with Streamlit for Data Science, de Tyler Richards
+📖 Libros:
+* Getting Started with Streamlit for Data Science, de Tyler Richards
 
 Twitter:
 * Streamlit: @streamlit
-* Fanilo Andrianasolo @andfanilo
+* Fanilo Andrianasolo: @andfanilo
 * Charlie Wargnier: @DataChaz
 * JM Napoles: @napoles3D
-
 
 ---
 Página 1: ./Home

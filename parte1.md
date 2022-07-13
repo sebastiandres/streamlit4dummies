@@ -196,7 +196,7 @@ col2.write("A dog")
 
 **Expander** ([st.expander]()): Permite crear un elemento acordeón que se despliega o se contrae.
 
-![columns](./images/expanders.jpg)
+![columns](./images/expander.jpg)
 
 ```
 with st.expander("Título del expander"):
@@ -230,7 +230,7 @@ if st.sidebar.button('Mi botón opcional'):
 
 
 
-Existe un trucazo muy interesante. Si necesitas calcular varias cosas y mostrar un elemento después, puedes generar un placeholder utilizando la función `st.empty`.
+Existe un trucazo interesante. Si necesitas mostrar elementos en un orden distinto al que se van calculando, puedes generar un placeholder utilizando la función `st.empty`.
 Con ello, streamlit sabe que tiene que reservar un lugar para un elemento que le será alimentado después (y que puede ser cualquier elemento válido y compatible). También puedes usar `st.empty` para hacer desaparecer un elemento creado de esta forma.
 
 Prueba copiando, pegando y ejecutando este código en el archivo `Inicio.py`
