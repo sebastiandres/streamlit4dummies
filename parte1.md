@@ -9,10 +9,11 @@ Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de
 
 ![avatar](./images/avatar.jpeg)
 
-
 ### ¿Qué relación tengo con streamlit?
 
 Aprendí sobre streamlit en plena pandemia. Por formación, desarrollo código pero no tengo experiencia (ni tiempo) para convertir código en una UI/página web. Streamlit solucionó esa gran debilidad. ¡Me permitió generar mucha visibilidad en mi trabajo y ayudarme a resolver muchos problemas (y crear otros)!
+
+![st fan](./images/st_fan.png)
 
 En Noviembre del 2021 hice una charla sobre streamlit en la PyCon Chile donde presenté directamente desde una app hecha en streamlit, y poco después, comencé a participar más activamente en la comunidad de streamlit. He participado en 2 hackatones de Streamlit, obteniendo premios en ambas, y también publicado en el blog de streamlit. Actualmente formo parte del ["Streamlit Creators Community"](https://streamlit.io/creators/).
 
@@ -117,7 +118,6 @@ Para las actividades del taller resulta ideal contar con una cuenta gratuita en 
 
 ![homer grill](./images/homer_grill.gif)
 
-
 Realiza las siguientes tareas:
 
 [+] Realiza un fork del repositorio en [github](https://github.com/sebastiandres/streamlit4dummies).
@@ -180,7 +180,9 @@ Inicio.py # Archivo principal a ejecutar mediante "streamlit run Inicio.py"
 ### ¿Cómo colocar elementos?
 Existen varios formas de ordenar el contenido de una aplicación. Prueba editar el archivo `Inicio.py` y observar los cambios.
 
-* Columnas ([st.columns]()): Permite crear columnas de ancho fijo, agregado elementos a cada uno de ellas.
+**Columnas** ([st.columns]()): Permite crear columnas de ancho fijo, agregado elementos a cada uno de ellas.
+
+![columns](./images/columns.jpg)
 
 ```python
 col1, col2 = st.columns(2) # Anchos iguales
@@ -192,7 +194,9 @@ col2.button("Another button")
 col2.write("A dog")
 ```
 
-* Expander ([st.expander]()): Permite crear un elemento acordeón que se despliega o se contrae.
+**Expander** ([st.expander]()): Permite crear un elemento acordeón que se despliega o se contrae.
+
+![columns](./images/expanders.jpg)
 
 ```
 with st.expander("Título del expander"):
@@ -200,7 +204,7 @@ with st.expander("Título del expander"):
     st.write("Hola mundo")
 ```
 
-* Tabs ([st.tabs]()): Permite crear un menú de pestañas.
+**Tabs** ([st.tabs]()): Permite crear un menú de pestañas.
 
 ```
 with st.tabs("Título de la pestaña 1"):
@@ -212,7 +216,9 @@ with st.tabs("Título de la pestaña 2"):
     st.write("¿Que tal, festival?")
 ```
 
-* Sidebar ([st.sidebar]()): Permite agregar elementos a la barra lateral de la aplicación. Esta barra lateral se muestra sólo si tiene elementos en ella (páginas o elementos agregados).
+**Sidebar** ([st.sidebar]()): Permite agregar elementos a la barra lateral de la aplicación. Esta barra lateral se muestra sólo si tiene elementos en ella (páginas o elementos agregados).
+
+![sidebar](./images/sidebar.jpg)
 
 ```
 # En lugar de llamar a st directamente
