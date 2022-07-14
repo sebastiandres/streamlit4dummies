@@ -13,7 +13,7 @@ Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de
 
 Aprendí sobre streamlit en plena pandemia. Por formación, desarrollo código pero no tengo experiencia (ni tiempo) para convertir código en una GUI/página web. Streamlit solucionó esa gran debilidad. ¡Me permitió generar mucha visibilidad en mis proyectos personales y profesionales, y ayudarme a resolver muchos problemas (y crear algunos otros)!
 
-![st fan](./images/st_fan.png){:height="250px"}
+![st fan](./images/st_fan.png){:height="350px"}
 
 En Noviembre del 2021 hice una charla sobre streamlit en la PyCon Chile donde presenté directamente desde una app hecha en streamlit, y poco después, comencé a participar más activamente en la comunidad de streamlit. He participado en 2 hackatones de Streamlit, obteniendo premios en ambas, y también publicado en el blog de streamlit. Actualmente formo parte del ["Streamlit Creators Community"](https://streamlit.io/creators/).
 
