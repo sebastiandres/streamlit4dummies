@@ -211,8 +211,6 @@ Consejos:
 * No aprender sólo por saber. Buscar un proyecto apasionante, y aprender en lla medida que se necesita. ¡Hay que tirarse a la piscina!
 * Seguir el desafío: "[30 días de Streamlit](https://share.streamlit.io/streamlit/30days)"
 
-![LINKS](./images/link.png){:height="250px"}
-
 Comunidades:
 * Foro Oficial: https://discuss.streamlit.io/
 * Discord: https://discord.com/invite/bTz5EDYh9Z
@@ -225,3 +223,6 @@ Twitter:
 * Fanilo Andrianasolo: @andfanilo
 * Charlie Wargnier: @DataChaz
 * JM Napoles: @napoles3D
+* Yuichiro Tachibana: @whitphx
+
+![LINKS](./images/link.png){:height="500px"}

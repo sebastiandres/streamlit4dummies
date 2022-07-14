@@ -177,7 +177,7 @@ Inicio.py # Archivo principal a ejecutar mediante "streamlit run Inicio.py"
 ### ¿Cómo colocar elementos?
 Existen varios formas de ordenar el contenido de una aplicación. Prueba editar el archivo `Inicio.py` y observar los cambios.
 
-**Columnas** ([st.columns]()): Permite crear columnas de ancho fijo, agregado elementos a cada uno de ellas.
+**Columnas** ([st.columns](https://docs.streamlit.io/library/api-reference/layout/st.columns)): Permite crear columnas de ancho fijo, agregado elementos a cada uno de ellas.
 
 ![columns](./images/columns.jpg){:height="250px"}
 
@@ -191,7 +191,7 @@ col2.button("Another button")
 col2.write("A dog")
 ```
 
-**Expander** ([st.expander]()): Permite crear un elemento acordeón que se despliega o se contrae.
+**Expander** ([st.expander](https://docs.streamlit.io/library/api-reference/layout/st.expander)): Permite crear un elemento acordeón que se despliega o se contrae.
 
 ![columns](./images/expander.jpg){:height="250px"}
 
@@ -201,19 +201,22 @@ with st.expander("Título del expander"):
     st.write("Hola mundo")
 ```
 
-**Tabs** ([st.tabs]()): Permite crear un menú de pestañas.
+**Tabs** ([st.tabs](https://docs.streamlit.io/library/api-reference/layout/st.tabs)): Permite crear un menú de pestañas.
+
+![columns](./images/tabs.gif){:height="250px"}
 
 ```
-with st.tabs("Título de la pestaña 1"):
+tab1, tab2 = st.tabs(["Tab 1", "Tab 2"])
+with tab1:
     # Este contenido se muestra en la pestaña 1
     st.write("Hola mundo")
 
-with st.tabs("Título de la pestaña 2"):
+with tab2:
     # Este contenido se muestra en la pestaña 2
     st.write("¿Que tal, festival?")
 ```
 
-**Sidebar** ([st.sidebar]()): Permite agregar elementos a la barra lateral de la aplicación. Esta barra lateral se muestra sólo si tiene elementos en ella (páginas o elementos agregados).
+**Sidebar** ([st.sidebar](https://docs.streamlit.io/library/api-reference/layout/st.sidebar)): Permite agregar elementos a la barra lateral de la aplicación. Esta barra lateral se muestra sólo si tiene elementos en ella (páginas o elementos agregados).
 
 ![sidebar](./images/sidebar.jpg){:height="250px"}
 
@@ -224,8 +227,6 @@ st.sidebar.write('Esto está en el sidebar')
 if st.sidebar.button('Mi botón opcional'):
     st.balloons()
 ```
-
-
 
 Existe un trucazo interesante. Si necesitas mostrar elementos en un orden distinto al que se van calculando, puedes generar un placeholder utilizando la función `st.empty`.
 Con ello, streamlit sabe que tiene que reservar un lugar para un elemento que le será alimentado después (y que puede ser cualquier elemento válido y compatible). También puedes usar `st.empty` para hacer desaparecer un elemento creado de esta forma.
@@ -246,7 +247,7 @@ if st.button("Click me!"):
 ```
 
 ### ¿Qué elementos colocar?
-La cantidad de elementos en Streamlit es enorme. No cubriremos todos. Para ver todos los elementos disponibles, visita la [documentación de la API](https://docs.streamlit.io/library/api-reference). A diferencia de Streamlit, prefiero clasificar los elementos en cuatro categorías: 
+La cantidad de elementos en Streamlit es abrumadora. No alcanzaremos a mostrarlos todos. Para ver todos los elementos disponibles, visita la [documentación de la API](https://docs.streamlit.io/library/api-reference). A diferencia de Streamlit, prefiero clasificar los elementos en cuatro categorías: 
 - Entrada de datos: para pedir datos al usuario.
 - Control: para alertar o informar al usuario.
 - Output y multimedia: para mostrar algo al usuario.
