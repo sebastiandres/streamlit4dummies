@@ -7,13 +7,13 @@
 
 Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de Data Scientists y Data Engineers (¿Interesado? ¡contáctame!). Llevo programando en Python desde el 2008, y siempre estoy buscando nuevas librerías. He dictado charlas y talleres en diversas PyCon (Colombia, Argentina, Chile, Latam) y desarrollado algunas librerías open source (pypsdier y streamlit_book). ¿Más sobre mí? [Github](https://github.com/sebastiandres), [Twitter](https://twitter.com/sebastiandres) & [Linkedin](https://www.linkedin.com/in/sebastiandres/).
 
-![avatar](./images/avatar.jpeg){:height="100px"}
+![avatar](./images/avatar.jpeg){:height="250px"}
 
 ### ¿Qué relación tengo con streamlit?
 
 Aprendí sobre streamlit en plena pandemia. Por formación, desarrollo código pero no tengo experiencia (ni tiempo) para convertir código en una GUI/página web. Streamlit solucionó esa gran debilidad. ¡Me permitió generar mucha visibilidad en mis proyectos personales y profesionales, y ayudarme a resolver muchos problemas (y crear algunos otros)!
 
-![st fan](./images/st_fan.png)
+![st fan](./images/st_fan.png){:height="250px"}
 
 En Noviembre del 2021 hice una charla sobre streamlit en la PyCon Chile donde presenté directamente desde una app hecha en streamlit, y poco después, comencé a participar más activamente en la comunidad de streamlit. He participado en 2 hackatones de Streamlit, obteniendo premios en ambas, y también publicado en el blog de streamlit. Actualmente formo parte del ["Streamlit Creators Community"](https://streamlit.io/creators/).
 
@@ -54,7 +54,7 @@ Usa Streamlit si quieres:
 ### Historia
 Streamlit fue fundada en 2018 por Adrien Treuille, Amanda Kelly, y Thiago Teixeira. A pesar de ser una librería de código abierto, su desarrollo está a cargo de la startup del mismo nombre y tiene detrás un equipo de +60 personas. En marzo del 2022, Streamlit fue adquirida por Snowflake. La librería seguirá siendo una librería de código abierto, pero se espera tenga una integración potente con Snowflake. Tiene un desarrollo vertiginoso, con nuevas versiones y funcionalidades saliendo cada semana.
 
-![streamlit star history](./images/star_history.png)
+![streamlit star history](./images/star_history.png){:height="400px"}
 
 ### Filosofía
 >> "Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes you can build and deploy powerful data apps."
@@ -179,7 +179,7 @@ Existen varios formas de ordenar el contenido de una aplicación. Prueba editar 
 
 **Columnas** ([st.columns]()): Permite crear columnas de ancho fijo, agregado elementos a cada uno de ellas.
 
-![columns](./images/columns.jpg)
+![columns](./images/columns.jpg){:height="250px"}
 
 ```python
 col1, col2 = st.columns(2) # Anchos iguales
@@ -193,7 +193,7 @@ col2.write("A dog")
 
 **Expander** ([st.expander]()): Permite crear un elemento acordeón que se despliega o se contrae.
 
-![columns](./images/expander.jpg)
+![columns](./images/expander.jpg){:height="250px"}
 
 ```
 with st.expander("Título del expander"):
@@ -215,7 +215,7 @@ with st.tabs("Título de la pestaña 2"):
 
 **Sidebar** ([st.sidebar]()): Permite agregar elementos a la barra lateral de la aplicación. Esta barra lateral se muestra sólo si tiene elementos en ella (páginas o elementos agregados).
 
-![sidebar](./images/sidebar.jpg)
+![sidebar](./images/sidebar.jpg){:height="250px"}
 
 ```
 # En lugar de llamar a st directamente

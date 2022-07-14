@@ -38,6 +38,8 @@ Lorem Ipsum
 ## 7. Actividad Práctica: Consumiendo un API
 Una API es una mecanismo de conectarse con un computador y lograr que haga cosas: entregar información (método GET), recibir información (método POST), etc.
 
+![API](images/api.png){:height="400px"}
+
 Algunos ejemplos de API:
 * [dog.ceo](https://dog.ceo/dog-api/documentation/): API de perros (gratuita, abierta).
 * [thecatapi](https://thecatapi.com/): API de gatos (pagada, requiere registro).
@@ -74,7 +76,7 @@ Consejos:
 * No aprender sólo por saber. Buscar un proyecto apasionante, y aprender en lla medida que se necesita. ¡Hay que tirarse a la piscina!
 * Seguir el desafío: "[30 días de Streamlit](https://share.streamlit.io/streamlit/30days)"
 
-![LINKS](./images/link.png)
+![LINKS](./images/link.png){:height="250px"}
 
 Comunidades:
 * Foro Oficial: https://discuss.streamlit.io/
