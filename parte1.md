@@ -11,7 +11,7 @@ Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de
 
 ### ¿Qué relación tengo con streamlit?
 
-Aprendí sobre streamlit en plena pandemia. Por formación, desarrollo código pero no tengo experiencia (ni tiempo) para convertir código en una UI/página web. Streamlit solucionó esa gran debilidad. ¡Me permitió generar mucha visibilidad en mi trabajo y ayudarme a resolver muchos problemas (y crear otros)!
+Aprendí sobre streamlit en plena pandemia. Por formación, desarrollo código pero no tengo experiencia (ni tiempo) para convertir código en una GUI/página web. Streamlit solucionó esa gran debilidad. ¡Me permitió generar mucha visibilidad en mis proyectos personales y profesionales, y ayudarme a resolver muchos problemas (y crear algunos otros)!
 
 ![st fan](./images/st_fan.png)
 
@@ -20,9 +20,9 @@ En Noviembre del 2021 hice una charla sobre streamlit en la PyCon Chile donde pr
 ### Puro bla bla bla... ¡muéstranos que has hecho!
 Algunas de mis apps, por orden cronológico:
 
-* [xkcd plots](https://sebastiandres-streamlit-xkcd-streamlit-app-0f8sh1.streamlitapp.com/): ¡mi primera app en streamlit! Explorando los widgets y cómo graficar. 
+* [xkcd plots](https://sebastiandres-streamlit-xkcd-streamlit-app-0f8sh1.streamlitapp.com/): ¡mi primera app en streamlit! Explorando los widgets y cómo graficar una función genérica. 
 * [Happy Birds](https://sebastiandres-streamlit-happy-birds-happy-birds-qzi7ap.streamlitapp.com/): Una app que desarrollé para un artículo en el [blog de streamlit](https://blog.streamlit.io/how-to-create-interactive-books-with-streamlit-and-streamlit-book-in-5-steps/), para ilustrar el uso de la librería streamlit_book.
-* [El datasaurio](https://datasaurus.streamlitapp.com/): Una app para ilustrar cómo streamlit permite complementar un artículo, y la importancia de graficar los datos.
+* [El datasaurio](https://datasaurus.streamlitapp.com/): Una app para ilustrar cómo streamlit permite complementar un artículo, y la importancia de graficar los datos. Mi app favorita.
 * [Confusion Matrix](https://sebastiandres-ml-edu-confusion-matrix-streamlit-app-3q5126.streamlitapp.com/): Explorando los límites de streamlit en html y javascript, enseñando sobre la matriz de confusión, y jugando con la última pelicula de matrix.
 * [Multipage Template](https://stbook-template.streamlitapp.com/): Un template para hacer una app multipágina con autenticación.
 
@@ -49,33 +49,30 @@ Usa Streamlit si quieres:
 * Simple pero potente: Programar con streamlit es como jugar con legos... está diseñado para encajar perfectamente y que puedas armar todo lo que quieras.
 * Batteries included: Incluye una colección de elementos de construcción, extensible mediante componentes, y por supuesto, con todas tus librerías favoritas.
 * Ofertas de trabajo: se está volviendo una librería extreamadamente popular. 
-* Cada proyecto se vuelve algo concreto y que puedo compartir, mejora la visibilidad de mi trabajo.
+* Cada proyecto se vuelve algo concreto y que puedes compartir, mejora la visibilidad de tu trabajo.
 
 ### Historia
-Streamlit fue fundada en 2018 por Adrien Treuille, Amanda Kelly, y Thiago Teixeira. A pesar de ser una librería de código abierto, su desarrollo esta a cargo de la startup del mismo nombre y tiene detrás un equipo de +60 personas. En marzo del 2022, streamlit fue adquirida por Snowflake. La librería seguirá siendo una librería de código abierto, pero se espera tenga una integración potente con Snowflake. Tiene un desarrollo vertiginoso, con nuevas versiones y funcionalidades saliendo cada semana.
+Streamlit fue fundada en 2018 por Adrien Treuille, Amanda Kelly, y Thiago Teixeira. A pesar de ser una librería de código abierto, su desarrollo está a cargo de la startup del mismo nombre y tiene detrás un equipo de +60 personas. En marzo del 2022, Streamlit fue adquirida por Snowflake. La librería seguirá siendo una librería de código abierto, pero se espera tenga una integración potente con Snowflake. Tiene un desarrollo vertiginoso, con nuevas versiones y funcionalidades saliendo cada semana.
 
 ![streamlit star history](./images/star_history.png)
 
 ### Filosofía
 >> "Streamlit is an open-source Python library that makes it easy to create and share beautiful, custom web apps for machine learning and data science. In just a few minutes you can build and deploy powerful data apps."
 
-Es muchísimo más simple de usar que frameworks para la web como django, flask, bottle u otras. ¡Todo es python! 
+Es muchísimo más simple de usar que un web framework como django, flask, bottle u otras. ¡Todo es python! 
 
 No es necesario dominar nada de html, css, javascript, etc. ¡Todo es python!
 
-No hay convenciones ni frameworks, solo apis que regresan objetos de python.
+No hay convenciones ni frameworks, solo apis que regresan objetos o valores de python.
 
 ### Más ejemplos
 
-* https://share.streamlit.io/spiruel/satschool/main/app.py  
-* https://geospatial.streamlitapp.com/
-* https://share.streamlit.io/streamlit/demo-deepdream
-* https://streamlit.io/gallery
-* https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py
-* https://share.streamlit.io/streamlit/roadmap/
-* https://github.com/jrieke/best-of-streamlit 
-* https://share.streamlit.io/streamlit/demo-deepdream
-* https://streamlit.io/components
+* [SatSchool](https://share.streamlit.io/spiruel/satschool/main/app.py): Una de las mejores webapps educativas que he visto, para aprender sobre datos satelitales de la tierra.
+* [GeoSpatial](https://geospatial.streamlitapp.com/): Webapp para procesar datos geospaciales.
+* [DeepDream](https://share.streamlit.io/streamlit/demo-deepdream): Una demo de DeepDream, una forma de arte psicodélico generado por redes neuronales.
+* [Cheatsheet](https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py): Resumen de funcionalidades de streamlit, hecho en streamlit.
+* [Galería oficiall de Ejemplos](https://streamlit.io/gallery): Lista oficial de ejemplos de streamlit, clasificadas según tema. 
+* [Best of Streamlit (según jrieke)](https://github.com/jrieke/best-of-streamlit): Lista de los mejores ejemplos de streamlit.
 
 ## 3. Instalación
 
@@ -120,25 +117,25 @@ Para las actividades del taller resulta ideal contar con una cuenta gratuita en 
 
 Realiza las siguientes tareas:
 
-[+] Realiza un fork del repositorio en [github](https://github.com/sebastiandres/streamlit4dummies).
+- [ ] Realiza un fork del repositorio en [github](https://github.com/sebastiandres/streamlit4dummies).
 
-[+] Descarga el repositorio a local: 
+- [ ] Descarga **tu** repositorio a local: 
 ```
-git clone myuser@github:mirepo
+git clone git@github.com:MYUSER/streamlit4dummies.git
 ```
 
-[+] Genera el ambiente virtual y activalo
+- [ ] Genera el ambiente virtual y activalo
 ```
 virtualenv venv
 source venv/bin/activate
 ```
 
-[+] Instala las librerías
+- [ ] Instala las librerías
 ```
 pip install -r requirements.txt
 ```
 
-[+] Levanta la aplicación
+- [ ] Levanta la aplicación
 ```
 streamlit run Inicio.py
 ```
@@ -146,7 +143,7 @@ streamlit run Inicio.py
 Edita el archivo `Inicio.py` y cómo se refleja casi inmediatamente en la aplicación.
 
 ## 5. Elementos de Streamlit
-La [documentación de la API](https://docs.streamlit.io/library/api-reference) de streamlit es magnífica. Revísala frencuentamente, porque la librería mejora semana a semana.
+La [documentación de la API](https://docs.streamlit.io/library/api-reference) de streamlit es magnífica. Revísala frecuentamente, porque la librería mejora semana a semana.
 
 ### Configuración (setup)
 El primer paso (o el último paso, según prefieras) es realizar algunas configuraciones de la aplicación. Estas son opcionales, pero permiten hacer que la aplicación se vea mejor.
@@ -274,12 +271,13 @@ El video lo explica bien como hacerlo una vez que tienes una cuenta en https://s
 
 ## 8. Actividad Práctica: Deploy a la nube
 
-[+] Subir cambios a tu repositorio
+- [ ] Subir cambios a tu repositorio
 ```
 git commit -am "Mis cambios se van a la nube"
+git push
 ```
 
-[+] Hacer deployment a Streamlit Share
+- [ ] Hacer deployment a Streamlit Share
 
 ## 9. Consejos Finales
 
