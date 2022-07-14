@@ -7,7 +7,7 @@
 
 Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de Data Scientists y Data Engineers (¿Interesado? ¡contáctame!). Llevo programando en Python desde el 2008, y siempre estoy buscando nuevas librerías. He dictado charlas y talleres en diversas PyCon (Colombia, Argentina, Chile, Latam) y desarrollado algunas librerías open source (pypsdier y streamlit_book). ¿Más sobre mí? [Github](https://github.com/sebastiandres), [Twitter](https://twitter.com/sebastiandres) & [Linkedin](https://www.linkedin.com/in/sebastiandres/).
 
-![avatar](./images/avatar.jpeg)
+![avatar](./images/avatar.jpeg){:height="100px"}
 
 ### ¿Qué relación tengo con streamlit?
 
