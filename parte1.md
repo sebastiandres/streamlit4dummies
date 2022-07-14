@@ -261,9 +261,8 @@ La cantidad de elementos en Streamlit es abrumadora. No alcanzaremos a mostrarlo
 La mejor manera es buscar en la documentación de la API, e ir probando los elementos que se necesitan. En [https://st4dummies.streamlitapp.com/StreamlitElements](https://st4dummies.streamlitapp.com/StreamlitElements) existe una demostración interactiva de casi todos los elementos (que puede compararse con el archivo `pages/StreamlitElements.py`).
 
 ## 6. Actividad Práctica: Personaliza la página de Inicio
-Utiliza los elementos que más te hayan llamado la atención para personalizar la página principal con alguna actividad.
-
-Algunas ideas:
+Utiliza los elementos que más te hayan llamado la atención para personalizar la página principal con alguna actividad. Inspírate del archivo `pages/Streamlit-Elements.py`. Algunas ideas:
+* Pone botones de celebración.
 * Agrega tu nombre y una foto de perfil.
 * Obtén el nombre del usuario y una fecha, y calcula cuantos días faltan para su cumpleaños.
 * ¡Haz un gráfico interesante!
