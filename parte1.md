@@ -11,7 +11,7 @@ Trabajo en la empresa uPlanner como Chief Data Officer, liderando los equipos de
 
 ### ¿Qué relación tengo con streamlit?
 
-Aprendí sobre streamlit en plena pandemia. Por formación, desarrollo código pero no tengo experiencia (ni tiempo) para convertir código en una GUI/página web. Streamlit solucionó esa gran debilidad. ¡Me permitió generar mucha visibilidad en mis proyectos personales y profesionales, y ayudarme a resolver muchos problemas (y crear algunos otros)!
+Aprendí sobre streamlit en plena pandemia. Por formación, desarrollo código de computación científica y data science, pero no tengo experiencia (ni tiempo) para convertir código en una GUI/página web. Streamlit solucionó esa gran debilidad. ¡Me permitió generar mucha visibilidad en mis proyectos personales y profesionales, y ayudarme a resolver muchos problemas (y crear algunos otros)!
 
 ![st fan](./images/st_fan.png){:height="350px"}
 
@@ -68,7 +68,6 @@ No hay convenciones ni frameworks, solo apis que regresan objetos o valores de p
 ### Más ejemplos
 
 * [SatSchool](https://share.streamlit.io/spiruel/satschool/main/app.py): Una de las mejores webapps educativas que he visto, para aprender sobre datos satelitales de la tierra.
-* [GeoSpatial](https://geospatial.streamlitapp.com/): Webapp para procesar datos geospaciales.
 * [DeepDream](https://share.streamlit.io/streamlit/demo-deepdream): Una demo de DeepDream, una forma de arte psicodélico generado por redes neuronales.
 * [Cheatsheet](https://share.streamlit.io/daniellewisdl/streamlit-cheat-sheet/app.py): Resumen de funcionalidades de streamlit, hecho en streamlit.
 * [Galería oficiall de Ejemplos](https://streamlit.io/gallery): Lista oficial de ejemplos de streamlit, clasificadas según tema. 
@@ -85,7 +84,7 @@ pip install streamlit
 
 o si quieres una versión específica
 ```
-pip install streamlit==1.10.0
+pip install streamlit==1.11.0
 ```
 
 ### ¿Cómo desarrollar en streamlit?
@@ -105,7 +104,16 @@ pip install -r requirements.txt
 ```
 (para salir del ambiente virtual, usa `deactivate`)
 
-Nota: No olvides incluir la versión de las librerías. Es un trabajo extra, pero garantiza que la ejecución sea reproducible y estable en el tiempo. No hay nada más molesto que pensar que una app está funcionando, para descubrir después que ya no está funcionando porque la última versión de una librería X hizo un cambio que te afectó sin saberlo.
+Alternativamente, si prefieres puedes instalar las librerías directamente desde conda:
+
+```
+conda create -n st4dummies python=3.8
+source activate st4dummies
+pip install -r requirements.txt
+```
+(para salir del ambiente virtual, usa `source deactivate`)
+
+Nota: No olvides incluir la versión de las librerías. Es un trabajo extra, pero garantiza que la ejecución sea reproducible y estable en el tiempo. No hay nada más molesto que pensar que compartir una app para descubrir tiempo después que ya no está funcionando porque la última versión de una librería X hizo un cambio que te afectó sin saberlo.
 
 ## 4. Actividad práctica
 
@@ -117,25 +125,22 @@ Para las actividades del taller resulta ideal contar con una cuenta gratuita en 
 
 Realiza las siguientes tareas:
 
-- [ ] Realiza un fork del repositorio en [github](https://github.com/sebastiandres/streamlit4dummies).
+* Realiza un fork del repositorio en [github](https://github.com/sebastiandres/streamlit4dummies).
 
-- [ ] Descarga **tu** repositorio a local: 
+* Descarga **tu** repositorio a local: 
 ```
 git clone git@github.com:MYUSER/streamlit4dummies.git
+cd streamlit4dummies
 ```
 
-- [ ] Genera el ambiente virtual y activalo
-```
-virtualenv venv
-source venv/bin/activate
-```
+* Genera el ambiente virtual y activalo (virtualenv/conda/otro)
 
-- [ ] Instala las librerías
+* Instala las librerías
 ```
 pip install -r requirements.txt
 ```
 
-- [ ] Levanta la aplicación
+* Levanta la aplicación
 ```
 streamlit run Inicio.py
 ```
@@ -159,7 +164,7 @@ st.set_page_config(
      menu_items={
          'Get Help': 'https://www.extremelycoolapp.com/help',
          'Report a bug': "https://www.extremelycoolapp.com/bug",
-         'About': "# This is a header. This is an *extremely* cool app!"
+         'About': "# Info sobre mi app!"
      }
  )
 ```
@@ -169,9 +174,10 @@ La funcionalidad de multipágina es muy reciente en Streamlit ([api](https://doc
 ```bash
 Inicio.py # Archivo principal a ejecutar mediante "streamlit run Inicio.py"
 └─── pages/
-  └─── 1_Intro.py # Primera página
-  └─── 2_Página_dos.py # Segunda página
-  └─── 99_😎_Ultima_página.py # Tercera página, y tiene como ícono un emoji 😎
+  └─── 01_📃_Archivo.py # 1era página, con emoji 📃
+  └─── 02_🌐_API.py # 2da página, con emoji 🌐
+  └─── Proyecto_Personal.py # 3era página
+  └─── Streamlit-Elements.py # 4ta página
 ```
 
 ### ¿Cómo colocar elementos?
@@ -203,7 +209,7 @@ with st.expander("Título del expander"):
 
 **Tabs** ([st.tabs](https://docs.streamlit.io/library/api-reference/layout/st.tabs)): Permite crear un menú de pestañas.
 
-![columns](./images/tabs.gif){:height="250px"}
+![columns](./images/tabs.gif){:height="350px"}
 
 ```
 tab1, tab2 = st.tabs(["Tab 1", "Tab 2"])
@@ -221,8 +227,7 @@ with tab2:
 ![sidebar](./images/sidebar.jpg){:height="250px"}
 
 ```
-# En lugar de llamar a st directamente
-# Llamamos a st.sidebar
+# En lugar de llamar a st directamente, llamamos a st.sidebar
 st.sidebar.write('Esto está en el sidebar')
 if st.sidebar.button('Mi botón opcional'):
     st.balloons()
@@ -272,13 +277,13 @@ El video lo explica bien como hacerlo una vez que tienes una cuenta en https://s
 
 ## 8. Actividad Práctica: Deploy a la nube
 
-- [ ] Subir cambios a tu repositorio
+* Subir cambios a tu repositorio
 ```
 git commit -am "Mis cambios se van a la nube"
 git push
 ```
 
-- [ ] Hacer deployment a Streamlit Share
+* Hacer deployment a Streamlit Share
 
 ## 9. Consejos Finales
 
