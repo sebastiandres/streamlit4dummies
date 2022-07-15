@@ -4,13 +4,13 @@
 ## 1. Actividad Práctica: Analizando un archivo cargado por usuario
 
 Completar el archivo `pages/01_📃_Archivo.py` para que, usando la librería pandas y matplotlib, permita:
-- [ ] Cargar un archivo csv y leerlo pudiendo seleccionar el tipo de encoding y el separador.
-- [ ] Mostrar las primeras 10 líneas cargadas del archivo.
-- [ ] Indicar el número de columnas y filas del archivo.
-- [ ] Indicar para cada columna el nombre de la columna, el número de valores distintos, el valor más frecuente, el número de valores nulos y el porcentaje de valores nulos.
-- [ ] Seleccionar 1 columna y realiza un histograma de los valores.
+* Cargar como dataframe un archivo csv y leerlo pudiendo seleccionar el tipo de encoding, el separador y la cantidad de filas (usando [`pd.read_csv`](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)).
+* Mostrar el dataframe cargado.
+* Indicar el número de columnas y filas del archivo.
+* Mostrar una tabla resumen del archivo (usando [`pd.describe`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)).
+* Seleccionar 1 columna y realiza un histograma de los valores. Si la columna es de tipo categórico, mostrar el histograma sólo si hay menos de 10 categorías distintas.
 
-En `./datasets/` existen 2 datasets para testear la actividad: [`ExhaustiveDinosaurDataset.csv`](https://www.kaggle.com/datasets/kjanjua/jurassic-park-the-exhaustive-dinosaur-dataset) y [`CoffeeQuantityDataset.csv`](https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi).
+En `./datasets/` existen 2 datasets para testear la actividad: [`ExhaustiveDinosaurDataset.csv`](https://www.kaggle.com/datasets/kjanjua/jurassic-park-the-exhaustive-dinosaur-dataset) y [`CoffeeQuantityDataset.csv`](https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi), pero puedes probar con otros datasets.
 
 ## 2. Session State
 
@@ -136,25 +136,33 @@ Cada vez tenemos más herramientas a nuestra disposición.
 
 Una funcionalidad adicional que puede ser útil, es la de recuperar los parámetros de la URL. Esto puede usarse para consumir una API, o incluso esconder "Easter Eggs". 
 
-Por ejemplo, imaginemos que el usuario está en la dirección `http://localhost:8501/?show_map=True&selected=asia&selected=america`. Puedes acceder a los query parameters usando lo siguiente:
+Puedes acceder a los query parameters usando lo siguiente:
 
 ```python
-query_params = st.experimental_get_query_params()
-{"show_map": ["True"], "selected": ["asia", "america"]}
+query_params = st.experimental_get_query_params() # Obtener los parametros
+st.write(query_params) # Imprimir el diccionario
+st.write(query_params["selected"][0]) # Imprimir el primer elemento para el parametro "show_map"
 ```
+
+Prueba que pasa con algunas urls como: 
+* `http://localhost:8501/`. 
+* `http://localhost:8501/?show_map=True&selected=asia`. 
+* `http://localhost:8501/?show_map=True&selected=asia&selected=america`. 
 
 **Importante**: Los valores que regresa el diccionario para cada llave son siempre una lista, aunque el usuario haya entregado un único valor. Esto tiene sentido porque potencialmente el usuario puede entregar más de un valor para una misma llave.
 
 De manera complementaria, si después de procesar ciertos parámetros, quieres volver a redirigir al usuario a una url con ciertos parametros, puedes usar la función `st.experimental_set_query_params`.
 
-Para llevar aal usuario a la `http://localhost:8501/?show_map=True&selected=asia&selected=america`, deberías hacer lo siguiente:
+Para llevar al usuario a la url `http://localhost:8501/?show_parenthesis=False&selected=Pycon&selected=Chile`, deberías hacer lo siguiente:
 
 ```python
-query_params = {show_map=True,
-                selected=["asia", "america"],
-                }
-st.experimental_set_query_params(**query_params)
+query_params = {"show_parenthesis":False, "selected": ["Pycon", "Chile"]} # Parámetros de la URL
+st.experimental_set_query_params(**query_params) # Redirigimos a la página con los parámetros
 ```
+
+Intenta probar el código anterior estando en la dirección `http://localhost:8501/` y viendo como la redirección ocurre automáticamente.
+
+Es importante notar que los parámetros de la URL se mantendrán aunque navegues a otras páginas de la misma aplicación. Eso puede ser bueno o malo dependiendo de tu aplicación.
 
 ## 6. Streamlit components
 
@@ -166,7 +174,7 @@ Hay muchos ejemplos, pero los más interesantes son los siguientes:
 * [Drawable Canvas](https://share.streamlit.io/andfanilo/streamlit-drawable-canvas-demo/master/app.py) por Fanilo Andrianasolo.
 * [WebRTC](https://share.streamlit.io/whitphx/streamlit-webrtc-example/main/app.py) por Yuichiro Tachibana.
 
-En muchos casos, los componentes son una forma de empaquetar una funcionalidad o librería que ya existe en html/javascript, y lograr que pueda llamarse de manera nativa en Streamlit. 
+En muchos casos, los componentes son una forma de empaquetar una funcionalidad o librería que ya existe en html/javascript, y lograr que pueda llamarse de manera nativa en Streamlit. No creo que inicialmente necesites un componente, pero siempre conviene mirar en la lista si hay alguna funcionalidad que necesitas en tu proyecto. 
 
 Puedes encontrar la información oficial en [Streamlit Components](https://docs.streamlit.io/library/components).
 
@@ -197,13 +205,13 @@ La API que usaremos es la de [dog.ceo](https://dog.ceo/dog-api/documentation/).
 
 Editar el archivo `pages/02_🌐_API.py` para que:
 
-- [ ] Obtenga una lista de todas las razas de perros.
+* Obtenga una lista de todas las razas de perros.
 
-- [ ] Permita al usuario seleccionar una raza específica.
+* Permita al usuario seleccionar una raza específica.
 
-- [ ] Muestre una foto al azar de un perro de esa raza.
+* Muestre una foto al azar de un perro de esa raza.
 
-- [ ] Muestre una foto de cada una de las subrazas, si existen.
+* Muestre una foto de cada una de las subrazas, si existen.
 
 ## 8. Seguir aprendiendo
 
