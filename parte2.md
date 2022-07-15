@@ -206,12 +206,10 @@ La API que usaremos es la de [dog.ceo](https://dog.ceo/dog-api/documentation/).
 Editar el archivo `pages/02_🌐_API.py` para que:
 
 * Obtenga una lista de todas las razas de perros.
-
+* Muestra una lista con las razas que tienen más de una sub-raza, en orden descendente por número de sub-razas.
 * Permita al usuario seleccionar una raza específica.
-
 * Muestre una foto al azar de un perro de esa raza.
-
-* Muestre una foto de cada una de las subrazas, si existen.
+* Muestre una foto de cada una de las subrazas, si existen. ¡Trata de ordenar las fotos para que no quede tan desordenado!
 
 ## 8. Seguir aprendiendo
 

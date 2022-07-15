@@ -18,5 +18,5 @@ chart_data = pd.DataFrame(
      columns=['a', 'b', 'c'])
 st.line_chart(chart_data)
 
-st.subheader("Fotos de Gato porque internet")
+st.subheader("Foto de gato porque internet")
 st.image("https://cataas.com/cat/cute")
